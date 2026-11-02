@@ -1,11 +1,11 @@
-# ocrmdoc_jd220
+# speculative_decode_hit_rate_grouping
 
 **把OCR 文档理解工程师·投机解码的命中率归并成组并标出每组的代表项。**
 
-`ocrmdoc_jd220` —— 按结构键把条目聚类，标出OCR 文档理解工程师·投机解码的命中率上的同组项与各组的代表样本
+`speculative_decode_hit_rate_grouping` —— 按结构键把条目聚类，标出OCR 文档理解工程师·投机解码的命中率上的同组项与各组的代表样本
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`ocrmdoc_jd220.py` 拷走就能用
+- 单文件，`speculative_decode_hit_rate_grouping.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install cappa-r71-ocrmdoc_jd220
+pip install cappa-r71-speculative_decode_hit_rate_grouping
 ```
 
 装完直接用命令名调用：
 
 ```bash
-ocrmdoc_jd220 --help
+speculative_decode_hit_rate_grouping --help
 ```
 
-也可以不用安装，直接把 `ocrmdoc_jd220.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `speculative_decode_hit_rate_grouping.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ ocrmdoc_jd220 --help
 ## 用法
 
 ```bash
-python ocrmdoc_jd220.py --file input.txt
-python ocrmdoc_jd220.py --text "示例内容"
-python ocrmdoc_jd220.py --file input.txt --json
+python speculative_decode_hit_rate_grouping.py --file input.txt
+python speculative_decode_hit_rate_grouping.py --text "示例内容"
+python speculative_decode_hit_rate_grouping.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python ocrmdoc_jd220.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_ocrmdoc_jd220.py
+python test_speculative_decode_hit_rate_grouping.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_ocrmdoc_jd220.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/cappa-r71/ocrmdoc_jd220>
+- GitHub 仓库：<https://github.com/cappa-r71/speculative_decode_hit_rate_grouping>
 
 ---
 
@@ -79,7 +79,7 @@ python test_ocrmdoc_jd220.py
 cappa-r71 做OCR 文档理解工程师·投机解码的命中率相关的问题，方向对标华为的专家OCR 文档理解工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://cappa-r71.github.io>
-- 仓库：<https://github.com/cappa-r71/ocrmdoc_jd220>
+- 仓库：<https://github.com/cappa-r71/speculative_decode_hit_rate_grouping>
 
 ## 许可
 
